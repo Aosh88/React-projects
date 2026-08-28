@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import Greet from './Greeting'
 import {useEffect} from 'react'
+import Farewell from './Farewell'
+import TodoList from './TodoList'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -41,6 +43,9 @@ function App() {
       <p>You are {age} years old</p>
 
       {joke && <p>{joke.setup} — {joke.punchline}</p>}
+
+      <Farewell name="Dan" />
+      <TodoList />
 
     </div>
   
